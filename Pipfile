@@ -7,6 +7,9 @@ name = "pypi"
 django = "*"
 psycopg2-binary = "*"
 autopep8 = "*"
+django-phonenumber-field = "*"
+phonenumbers = "*"
+djangorestframework = "*"
 
 [dev-packages]
 pylint = "*"

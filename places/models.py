@@ -1,3 +1,13 @@
 from django.db import models
+from phonenumber_field.modelfields import PhoneNumberField
 
-# Create your models here.
+class Place(models.Model):
+    name = models.CharField(max_length=50,default=None)
+    address = models.CharField(max_length=50,default=None)
+    phone_number = PhoneNumberField()
+    website = models.CharField(max_length=50,default=None)
+    image = models.CharField(max_length=50,default=None)
+    is_pets_allowed = models.BooleanField(default=True, null=True)
+
+    def __str__(self):
+        return f"{self.name} -  {self.is_pets_allowed}"
