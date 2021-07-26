@@ -4,5 +4,5 @@ from ..models import Place
 
 class PlaceSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Place
-        fields = '__all__'
+      model = Place
+      fields = '__all__'

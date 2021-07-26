@@ -11,7 +11,7 @@ class Place(models.Model):
     description = models.CharField(max_length=500)
     category = models.ManyToManyField(
         "categories.Category",
-        related_name="place"
+        related_name="places"
     )
 
 
