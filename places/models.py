@@ -8,6 +8,12 @@ class Place(models.Model):
     website = models.CharField(max_length=50,default=None)
     image = models.CharField(max_length=50,default=None)
     is_pets_allowed = models.BooleanField(default=True, null=True)
+    description = models.CharField(max_length=500)
+    category = models.ManyToManyField(
+        "categories.Category",
+        related_name="place"
+    )
+
 
     def __str__(self):
         return f"{self.name} -  {self.is_pets_allowed}"

@@ -1,6 +1,6 @@
 from django.db.models import fields
 from rest_framework import serializers
-from .models import Place
+from ..models import Place
 
 class PlaceSerializer(serializers.ModelSerializer):
     class Meta:

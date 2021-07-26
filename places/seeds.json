@@ -1,0 +1,15 @@
+[
+{
+  "model": "places.place",
+  "pk": 1,
+  "fields": {
+    "name": "Côte Brasserie St. Katherine Docks",
+    "address": "International House, 1 St Katharine's Way, London",
+    "phone_number": "+442074883668",
+    "website": "www.cote.co.uk/restaurant/st-katharine-doc",
+    "image": "https://res.cloudinary.com/dbc3fejob/image/upload/",
+    "is_pets_allowed": true,
+    "description": "Côte is inspired by the brasseries of Paris, championing relaxed all-day dining and serving authentic French classics made from great quality, fresh ingredients."
+  }
+}
+]
