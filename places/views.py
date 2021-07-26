@@ -1,13 +1,16 @@
+from rest_framework import permissions
 from rest_framework.exceptions import NotFound
 from rest_framework.views import APIView #CLASS WHICH FACILITATES SENDING BACK JSON
 from rest_framework.response import Response #METHOD TO SEND BACK A RESPONSE
 from rest_framework import status #METHOD TO SEND BACK A STATUS CODE
+from rest_framework.permissions import IsAuthenticatedOrReadOnly
 
 from  .models import Place
 from .serializers.common import PlaceSerializer
 from  .serializers.populated import PopulatedPlaceSerializer
 
 class PlaceListView(APIView):
+    permission_classes  = (IsAuthenticatedOrReadOnly, )
 
     def get(self, _request): #GET ALL
         places = Place.objects.all() #GET EVERYTHING FROM THE PLACES TABLE IN THE DATABASE
@@ -23,6 +26,7 @@ class PlaceListView(APIView):
 
 
 class PlaceDetailView(APIView): 
+    permission_classes  = (IsAuthenticatedOrReadOnly, )
 
     def get_place (self, pk):
         try:

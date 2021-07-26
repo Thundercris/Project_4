@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'places',
     'comments',
     'categories',
+    'jwt_auth',
     'phonenumber_field'
 ]
 
@@ -131,3 +132,15 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+AUTH_USER_MODEL = 'jwt_auth.User'  
+
+REST_FRAMEWORK = {
+    'DEFAULT_RENDERER_CLASSES': [
+        'rest_framework.renderers.JSONRenderer', #SPECIFY TO DJANGO THAT WE WANT TO RETURN EVERYTHING IS JASON
+        'rest_framework.renderers.BrowsableAPIRenderer', 
+    ],
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'jwt_auth.authentication.JWTAuthentication' #MAKE SURE WE ARE USING JWT 
+    ],
+}
