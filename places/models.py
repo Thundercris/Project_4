@@ -13,7 +13,15 @@ class Place(models.Model):
         "categories.Category",
         related_name="places"
     )
+    owner  = models.ForeignKey(
+      "jwt_auth.User",
+      related_name="places",
+      null=True,
+      blank=True,
+      on_delete=models.SET_NULL
+    )
 
 
     def __str__(self):
         return f"{self.name} -  {self.is_pets_allowed}"
+        

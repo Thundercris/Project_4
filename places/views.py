@@ -18,6 +18,7 @@ class PlaceListView(APIView):
         return Response(serializers_places.data, status=status.HTTP_200_OK) #RETURN RESPONSE TO THE USER AND THE STATUS CODE
 
     def post(self, request):
+        request.data['owner'] = request.user.id
         place_to_add = PlaceSerializer(data=request.data)
         if place_to_add.is_valid():
             place_to_add.save()
