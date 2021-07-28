@@ -1,0 +1,35 @@
+* {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.btn-outline-success {
+  color: #ff385c !important;
+  border-color: #ff385c !important;
+  font-weight: bolder !important;
+}
+
+.btn-outline-success-change:hover {
+  background-color: #ff385c !important;
+  color: white !important;
+  font-weight: bolder;
+}
+
+#containercarousel {
+  background-color: #ff385c;
+  color: white;
+  height: 100%;
+}
+
+#containercarouselright {
+  display: table-row-group;
+}
+
+.form-check-input:checked{
+  background-color: #ff385c !important;
+  border-color: #ff385c !important;
+}
+
+.dropdown-item{
+  color: #ff385c !important;
+
+}

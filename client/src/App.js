@@ -9,15 +9,16 @@ import AboutUs from './components/common/AboutUs'
 
 
 
+
 const App = () => {
   return (
     <Router>
       <Nav />
       <Switch>
-        <Route exact path='/' component={Home} />
-        <Route exact path="/login" component={Login} />
-        <Route exact path="/register" component={Register} />
-        <Route exact path='/aboutus' component={AboutUs} />
+        <Route path="/login" component={Login} />
+        <Route path="/register" component={Register} />
+        <Route path='/aboutus' component={AboutUs} />
+        <Route path='/' component={Home} />
       </Switch>
       <Footer />
     </Router>
