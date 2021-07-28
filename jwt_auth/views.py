@@ -13,11 +13,11 @@ User = get_user_model()
 class RegisterView(APIView):
 
     def post(self, request):
-        user_to_create = UserSerializer(data=request.data)
-        if user_to_create.is_valid():
-          user_to_create.save()
-          return Response({'message': 'Registration Successfull'}, status=status.HTTP_202_ACCEPTED)
-        return Response(user_to_create.errors, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
+      user_to_create = UserSerializer(data=request.data)
+      if user_to_create.is_valid():
+        user_to_create.save()
+        return Response({'message': 'Registration Successfull'}, status=status.HTTP_202_ACCEPTED)
+      return Response(user_to_create.errors, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
 
 class LoginView(APIView):
 
