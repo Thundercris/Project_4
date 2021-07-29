@@ -3,14 +3,16 @@
 }
 
 .btn-outline-success {
-  color: #ff385c !important;
-  border-color: #ff385c !important;
+  background-color: #ff385c !important;
+  border-color:#ff385c !important;
+  color: white !important;
   font-weight: bolder !important;
 }
 
 .btn-outline-success-change:hover {
-  background-color: #ff385c !important;
-  color: white !important;
+  background-color: white !important;
+  color: #ff385c !important;
+  border-color: #ff385c !important;
   font-weight: bolder;
 }
 
@@ -36,4 +38,12 @@
 
 #cursor {
   cursor: pointer !important;
+}
+
+#sbtw {
+  margin-left: 5px;
+}
+
+#pna {
+  font-size: small!important;
 }
