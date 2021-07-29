@@ -1,8 +1,24 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useEffect } from 'react'
+import { Link, useHistory, useLocation } from 'react-router-dom'
+import { userIsAuthenticated } from '../../helpers/auth'
+// import { ToastContainer, toast } from 'react-toastify'
+// import 'react-toastify/dist/ReactToastify.css'
 
 const Nav = () => {
 
+  const history = useHistory()
+  // const notify = () => toast.success('You have been successfully logged out!', { autoClose: 3000 })
+
+  const { pathname } = useLocation()
+
+  const handleLogout = () => {
+    window.localStorage.removeItem('token')
+    history.push('/')
+  }
+
+  useEffect(() => {
+    userIsAuthenticated()
+  }, [pathname])
 
   return (
     <nav className="navbar navbar-expand-lg fixed-top navbar-light bg-light">
@@ -20,9 +36,18 @@ const Nav = () => {
               <li className="nav-item">
                 <Link to="/login" className="nav-link boldtext">ADD PLACE</Link>
               </li>
-              <li className="nav-item">
-                <Link to="/login" className="nav-link boldtext">LOGIN</Link>
-              </li>
+              {!userIsAuthenticated() ?
+                <li className="nav-item">
+                  <Link to="/login" className="nav-link boldtext">LOGIN</Link>
+                </li>
+                :
+                <li className="nav-item">
+                  <span onClick={handleLogout} className="nav-link boldtext" id="cursor">LOG OUT</span>
+                </li>
+              }
+              {/* <div>
+                <ToastContainer />
+              </div> */}
             </ul>
           </div>
           <form className="d-flex">
