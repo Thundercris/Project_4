@@ -17,12 +17,12 @@ const App = () => {
     <Router>
       <Nav />
       <Switch>
-        <Route path="/login" component={Login} />
-        <Route path="/register" component={Register} />
-        <Route path='/aboutus' component={AboutUs} />
-        <Route path='/profile' component={Profile} />
-        <Route path='/newplace' component={NewPlace} />
-        <Route path='/' component={Home} />
+        <Route exact path="/login" component={Login} />
+        <Route exact path="/register" component={Register} />
+        <Route exact path='/aboutus' component={AboutUs} />
+        <Route exact path='/profile' component={Profile} />
+        <Route exact path='/newplace' component={NewPlace} />
+        <Route exact path='/' component={Home} />
       </Switch>
       <Footer />
     </Router>

@@ -47,22 +47,22 @@ const Home = () => {
                       <div className="carousel-item active" data-bs-interval="10000">
                         <img src= {'http://res.cloudinary.com/dbc3fejob/image/upload/v1627476595/project%204/Home%20-carousel/image-from-rawpixel-id-2521482-original_mgmfcd.jpg'} className=" d-block w-100" alt="stories"/>
                         <div className="carousel-caption d-none d-md-block" id="corousetext">
-                          <h5>Something</h5>
-                          <p>Something!</p>
+                          <h5>Explore!</h5>
+                          <p>Find a new place or add a new one to share with the community!</p>
                         </div>
                       </div>
                       <div className="carousel-item" data-bs-interval="2000">
                         <img src= {'http://res.cloudinary.com/dbc3fejob/image/upload/c_scale,w_1200/v1627467529/project%204/Home%20-carousel/image-from-rawpixel-id-437390-jpeg_jlpdja.jpg'} className=" d-block w-100" alt="stories"/>
                         <div className="carousel-caption d-none d-md-block" id="corousetext">
-                          <h5>Something</h5>
-                          <p>Something!</p>
+                          <h5>Enjoy your time out!</h5>
+                          <p>With Friends!</p>
                         </div>
                       </div>
                       <div className="carousel-item">
                         <img src= {'http://res.cloudinary.com/dbc3fejob/image/upload/c_scale,w_1200/v1627467492/project%204/Home%20-carousel/image-from-rawpixel-id-400551-jpeg_je1ox3.jpg'} className=" d-block w-100" alt="stories"/>
                         <div className="carousel-caption d-none d-md-block" id="corousetext">
-                          <h5>Something</h5>
-                          <p>Something!</p>
+                          <h5>Smile!</h5>
+                          <p>The best is coming!</p>
                         </div>
                       </div>
                     </div>
@@ -82,62 +82,9 @@ const Home = () => {
           {/* ------------------------------------------- */}
           <div className="album py-5 bg-light">
             <div className="container">
-              {/* <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                <div className="col">
-                  <div className="card shadow-sm">
-                    <img className="bd-placeholder-img card-img-top" width="100%" height="225" src={myData[0].image}></img> 
-                    <div className="card-body">
-                      <p className="card-text">{myData[0].name}</p>
-                      <p className="card-text">{myData[0].address}</p>
-                      <p className="card-text">Phone number: {myData[0].phone_number}</p>
-                      <p className="card-text">{myData[0].description}</p>
-                      <div className="d-flex justify-content-between align-items-center">
-                        <div className="btn-group">
-                          <button type="button" className="btn btn-outline-success btn-outline-success-change">View</button>
-                          <button type="button" className="btn btn-outline-success btn-outline-success-change">Edit</button>
-                        </div>
-                        <small className="text-muted">{myData[0].category[0].name}</small>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col">
-                  <div className="card shadow-sm">
-                    <img className="bd-placeholder-img card-img-top" width="100%" height="225" src={myData[1].image}></img> 
-                    <div className="card-body">
-                      <p className="card-text">{myData[1].name}</p>
-                      <p className="card-text">{myData[1].address}</p>
-                      <p className="card-text">Phone number: {myData[1].phone_number}</p>
-                      <p className="card-text">{myData[1].description}</p>
-                      <div className="d-flex justify-content-between align-items-center">
-                        <div className="btn-group">
-                          <button type="button" className="btn btn-outline-success btn-outline-success-change">View</button>
-                          <button type="button" className="btn btn-outline-success btn-outline-success-change">Edit</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col">
-                  <div className="card shadow-sm">
-                    <img className="bd-placeholder-img card-img-top" width="100%" height="225" src={myData[2].image}></img> 
-                    <div className="card-body">
-                      <p className="card-text">{myData[2].name}</p>
-                      <p className="card-text">{myData[2].address}</p>
-                      <p className="card-text">Phone number: {myData[2].phone_number}</p>
-                      <p className="card-text">{myData[2].description}</p>
-                      <div className="d-flex justify-content-between align-items-center">
-                        <div className="btn-group">
-                          <button type="button" className="btn btn-outline-success btn-outline-success-change">View</button>
-                          <button type="button" className="btn btn-outline-success btn-outline-success-change">Edit</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div> */}
               {/* DISPLAY ALL DATA BELOW */}
               <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                 {myData.map((item) => {
-                  // console.log(item.category[0].name)
                   return ( 
                     <>
                       <div className="col">
@@ -153,7 +100,7 @@ const Home = () => {
                                 <a className="btn btn-outline-success btn-outline-success-change" href={item.website} target="_blank" rel="noreferrer noopener">View</a>
                                 <button type="button" className="btn btn-outline-success btn-outline-success-change" id="sbtw">Edit</button>
                               </div>
-                              <small className="text-muted">{item.category[0].name}</small>
+                              {/* <small className="text-muted">{item.category[0].name}</small> */}
                               {/* <small className="text-muted">{item.is_pet_allowed}</small> */}
                             </div>
                           </div>

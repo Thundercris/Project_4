@@ -3,7 +3,7 @@ from phonenumber_field.modelfields import PhoneNumberField
 
 class Place(models.Model):
     name = models.CharField(max_length=50,default=None)
-    address = models.CharField(max_length=50,default=None)
+    address = models.CharField(max_length=100,default=None)
     phone_number = PhoneNumberField()
     website = models.CharField(max_length=50,default=None)
     image = models.CharField(max_length=500,default=None)
@@ -11,7 +11,8 @@ class Place(models.Model):
     description = models.CharField(max_length=500)
     category = models.ManyToManyField(
         "categories.Category",
-        related_name="places"
+        related_name="places",
+        blank=True,
     )
     owner  = models.ForeignKey(
       "jwt_auth.User",

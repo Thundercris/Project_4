@@ -12,7 +12,7 @@ const NewPlace = () => {
     image: '',
     // is_pets_allowed: '',
     description: '',
-    category: '',
+    // category: '',
   })
   const [errors, setErrors] = useState({
     name: '',
@@ -22,7 +22,7 @@ const NewPlace = () => {
     image: '',
     // is_pets_allowed: '',
     description: '',
-    category: '',
+    // category: '',
   }, [])
 
   const handleChange = (event) => {
@@ -138,7 +138,7 @@ const NewPlace = () => {
                 />
                 {errors.description && <p className="text-danger">{errors.description.message}</p>}
               </div>
-              <div className="mb-3">
+              {/* <div className="mb-3">
                 <label htmlFor="exampleDropdownFormPassword1" className="form-label">Category</label>
                 <select className="form-select" aria-label="Default select example">
                   <option selected onChange={handleChange} value={formdata.category}>Select one</option>
@@ -146,7 +146,7 @@ const NewPlace = () => {
                   <option value="2">Pub</option>
                   <option value="3">Park</option>
                 </select>
-              </div>
+              </div> */}
               <button type="submit" className="btn btn-outline-success btn-outline-success-change form-control">Submit</button>
             </form>
           </div>
