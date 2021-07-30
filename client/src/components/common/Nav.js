@@ -41,8 +41,15 @@ const Nav = () => {
                   <Link to="/login" className="nav-link boldtext">LOGIN</Link>
                 </li>
                 :
-                <li className="nav-item">
-                  <span onClick={handleLogout} className="nav-link boldtext" id="cursor">LOG OUT</span>
+                <li className="nav-item" id="sbtwr">
+                  <div className="dropdown">
+                    <a className="btn btn-outline-success btn-outline-success-change dropdown-toggle"href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Me</a>
+                    <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <li><a className="dropdown-item" href="/Profile">My Profile</a></li>
+                      <li><a className="dropdown-item" href="/NewPlace">Add New Place</a></li>
+                      <li><span onClick={handleLogout} className="dropdown-item" id="cursor">LOG OUT</span></li>
+                    </ul>
+                  </div>
                 </li>
               }
               {/* <div>
