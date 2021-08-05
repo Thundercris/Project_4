@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import 'react-router-dom'
 
 const Home = () => {
-  const [count, setCount] = useState(0) 
+  const [count] = useState(0) 
   
   const [myData, setMyData] = useState(null)
   
@@ -23,6 +23,7 @@ const Home = () => {
     getData()
   },[count])
   // console.log(myData[0])
+
 
   return (
     <>
@@ -107,7 +108,9 @@ const Home = () => {
                         </div>
                       </div>
                     </>
-                  )})}
+                  )
+                }
+                )}
               </div>
             </div>
           </div> 
