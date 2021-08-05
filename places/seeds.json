@@ -6,10 +6,147 @@
     "name": "Côte Brasserie St. Katherine Docks",
     "address": "International House, 1 St Katharine's Way, London",
     "phone_number": "+442074883668",
-    "website": "www.cote.co.uk/restaurant/st-katharine-doc",
-    "image": "https://res.cloudinary.com/dbc3fejob/image/upload/",
+    "website": "https://cote.co.uk/restaurant/st-katharine-doc",
+    "image": "http://res.cloudinary.com/dbc3fejob/image/upload/v1626973044/project%204/Restaurants/Cote-SKD-2-edited_preview_yjcpuj.jpg",
     "is_pets_allowed": true,
-    "description": "Côte is inspired by the brasseries of Paris, championing relaxed all-day dining and serving authentic French classics made from great quality, fresh ingredients."
+    "description": "Côte is inspired by the brasseries of Paris, championing relaxed all-day dining and serving authentic French classics made from great quality, fresh ingredients.",
+    "owner": 2,
+    "category": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 2,
+  "fields": {
+    "name": "A Toca Restaurant",
+    "address": "343 Wandsworth Road, London, SW8 2JH",
+    "phone_number": "+442076272919",
+    "website": "https://atoca-restaurant.co.uk",
+    "image": "http://res.cloudinary.com/dbc3fejob/image/upload/v1627514243/project%204/02-A-Toca_vbpoxu.jpg",
+    "is_pets_allowed": null,
+    "description": "The most well known Portuguese restaurant in London. Open every day for breakfast, lunch and dinner.",
+    "owner": 2,
+    "category": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 3,
+  "fields": {
+    "name": "MANGIO Pasta & Bottega",
+    "address": "30-32 Knightrider St, London, EC4V 5JT",
+    "phone_number": "+442074897044",
+    "website": "https://mangio.co.uk",
+    "image": "http://res.cloudinary.com/dbc3fejob/image/upload/v1627392403/project%204/Restaurants/mangio_qi2u1u.jpg",
+    "is_pets_allowed": null,
+    "description": "This unique eatery offers a unique mix of Italian Deli, Pastificio (fresh pasta shop) and gourmet, fast-food dining.",
+    "owner": 2,
+    "category": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 4,
+  "fields": {
+    "name": "Alexander Pope",
+    "address": "Cross Deep,  Twickenham,  London,  TW1 4RB",
+    "phone_number": "+442088923050",
+    "website": "https://alexanderpope.co.uk",
+    "image": "http://res.cloudinary.com/dbc3fejob/image/upload/v1627636279/project%204/Restaurants/Alexander-Pope-2017-_10_-1-1-1450x966_zfji93.jpg",
+    "is_pets_allowed": true,
+    "description": "The perfect pub for a pint, Bitish food and boutique hotel bedrooms, showing all Six Nation matches near Twickenham rugby stadium, parties and meetings.",
+    "owner": 2,
+    "category": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 5,
+  "fields": {
+    "name": "Kintan Japanese BBQ",
+    "address": "34-36 High Holborn, London WC1V 6AE",
+    "phone_number": "+442072428076",
+    "website": "http://kintan.uk/",
+    "image": "http://res.cloudinary.com/dbc3fejob/image/upload/v1627639275/project%204/Restaurants/img3-2_j4s8l0.jpg",
+    "is_pets_allowed": true,
+    "description": "AuthenticJapanese BBQ In London",
+    "owner": 2,
+    "category": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 6,
+  "fields": {
+    "name": "Samuel Pepys",
+    "address": "Stew Lane, 48 Upper Thames Street, London, EC4V 3PT",
+    "phone_number": "+442074891871",
+    "website": "https://samuelpepys.pub/home",
+    "image": "http://res.cloudinary.com/dbc3fejob/image/upload/v1627641825/project%204/Restaurants/img_3815r_ja00k9.jpg",
+    "is_pets_allowed": true,
+    "description": "A hidden gem in the heart of the City, the Samuel Pepys offers spectacular views from its unique riverside location on the north bank of the Thames.",
+    "owner": 2,
+    "category": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 7,
+  "fields": {
+    "name": "Eat Tokyo",
+    "address": "50 Red Lion St, High Holborn, London WC1R 4PF",
+    "phone_number": "+442072423490",
+    "website": "https://www.eattokyo.co.uk/holborn",
+    "image": "http://res.cloudinary.com/dbc3fejob/image/upload/v1627641825/project%204/Restaurants/img_3815r_ja00k9.jpg",
+    "is_pets_allowed": true,
+    "description": "Authentic Japanese Food in London",
+    "owner": 2,
+    "category": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 8,
+  "fields": {
+    "name": "Ballarò",
+    "address": "34 Heath Rd, Strawberry Hill, Twickenham TW1 4BZ",
+    "phone_number": "+442032610003",
+    "website": "https://ballaro.co.uk",
+    "image": "http://res.cloudinary.com/dbc3fejob/image/upload/v1627644446/project%204/Restaurants/b116c4_dd3592d7fe1343a59bff69e27a558c8a_mv2_sjsswk.webp",
+    "is_pets_allowed": true,
+    "description": "Ballarò is an Italian restaurant specialized in Sicilian cuisine that takes the name from a lively, traditional Sicilian open air market in Palermo where fresh ingredients are bought for daily family meals.",
+    "owner": 2,
+    "category": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 9,
+  "fields": {
+    "name": "Cittie of Yorke",
+    "address": "22 High Holborn, London WC1V 6BN",
+    "phone_number": "+442072427670",
+    "website": "www.website.com",
+    "image": "http://res.cloudinary.com/dbc3fejob/image/upload/v1627644665/project%204/Pub/2020-07-05_fi6phb.jpg",
+    "is_pets_allowed": true,
+    "description": "Amazing old school pub!",
+    "owner": 2,
+    "category": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 10,
+  "fields": {
+    "name": "The Old Red Lion",
+    "address": "72 High Holborn, London, WC1V 6LS",
+    "phone_number": "+442074051748",
+    "website": "www.website.com",
+    "image": "http://res.cloudinary.com/dbc3fejob/image/upload/v1627663209/project%204/Pub/2020-07-05_lvetnt.jpg",
+    "is_pets_allowed": true,
+    "description": "Amazing pub!",
+    "owner": 2,
+    "category": []
   }
 }
 ]
