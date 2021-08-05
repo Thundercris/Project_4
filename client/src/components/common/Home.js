@@ -98,7 +98,7 @@ const Home = () => {
                             <div className="d-flex justify-content-between align-items-center">
                               <div>
                                 <a className="btn btn-outline-success btn-outline-success-change" href={item.website} target="_blank" rel="noreferrer noopener">View</a>
-                                <button type="button" className="btn btn-outline-success btn-outline-success-change" id="sbtw">Edit</button>
+                                <button type="button" className="btn btn-outline-success btn-outline-success-change" id="sbtw">Comment</button>
                               </div>
                               {/* <small className="text-muted">{item.category[0].name}</small> */}
                               {/* <small className="text-muted">{item.is_pet_allowed}</small> */}

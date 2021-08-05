@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React, { useState } from 'react'
 import { getTokenFromLocalStorage } from './PlacesAuth'
+import { useHistory } from 'react-router-dom'
 
 const NewPlace = () => {
   
@@ -32,6 +33,8 @@ const NewPlace = () => {
     setErrors(newErrors)
   }
 
+  const history = useHistory()
+
   const handleSubmit = async (event) => {
     event.preventDefault()
     try {
@@ -40,6 +43,7 @@ const NewPlace = () => {
           headers: { Authorization: `Bearer ${getTokenFromLocalStorage()}` },
         }
       )
+      history.push('/')
     } catch (err) {
       setErrors(err.response.data)
     }
